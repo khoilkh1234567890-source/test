@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)) ;
+    gap: 20px;
+}
+.card {
+    font-size: 14px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #4e62c6;
+    background: #ffffff;
+    transition: 0.2s;
+    position:relative; 
+    display:flex;
+    flex-direction: column;
+
+
+}
+.card__img{
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 12px; 
+    border-bottom: 1px solid #eee;
+    background: #fcfcfc;
+    color: #7a93b5;
+}
+.card__badge{
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 4px;
+    background: #91a0e8;
+    color: #ffffff;
+    position:absolute;
+    top: 12px;
+    right: 12px; 
+    padding: 4px 8px;
+}
+.card__body{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+     flex: 1;   
+
+}
+.card__cat {
+  font-size: 11px;
+  font-weight: 700;
+  color: #0066cc;
+  letter-spacing: 0.8px;
+  margin-bottom: 6px;
+}
+.card__name{
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f2c52;
+    line-height: 1.35;
+     margin-bottom: 6px;
+}
+.card__desc {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.card__price {
+    display: flex;
+    align-items: center;
+     gap: 8px;
+    margin-bottom: 8px;
+}
+.card__price-now {
+    font-size: 18px;
+     font-weight: 700;
+      color: #0f2c52;
+}
+.card__price-old {
+      font-size: 13px;
+     color: #999;
+     text-decoration: line-through;
+}
+.card__actions {
+      margin-top: auto;       
+    display: flex;
+     flex-direction: column;
+    gap: 8px;
+     justify-content: center;
+     align-items: center;
+}
+.card__btn {
+  display: block;
+  text-align: center;
+  background: #0066cc;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+
+}
+.card__link {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: #d97706;
+  text-decoration: none;
+}
